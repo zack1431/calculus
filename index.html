@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+        <title>Calculator</title>
+        <style>
+            body{
+                display: grid;
+                place-content: center;
+                min-height: 100vh;
+                font-family:monospace;
+            }
+            .char-limit{
+                text-align: right;
+                float: right;
+            }
+            .btn-char{
+                margin-top: 10px;
+            }
+            #calc{
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+            }
+            button{
+                width:100%;
+                padding:15px;
+                border: none;
+                background: transparent;
+                border-bottom: 2px solid #DEE1E5;
+            }
+            #result{
+                font-weight: bold;
+                background-color: #B9B9B9;
+                padding: 10px;
+                color: #919191;
+                border: none;
+                width: 100%;
+            }
+            .wrapper{
+                padding: 15px;
+                background-color: #DADADA;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <button onclick="start()">Start</button>
+        <button onclick="pause()">Pause</button>
+        <button onclick="stop()">Stop</button> -->
+            <h1 id="title">Smart Calculus</h1>
+            <p id="description">Tell Us What on your mind, Calculator for your daily math calculations</p>
+            <div class="wrapper">
+                <input type="text" id="result" readonly></textarea>
+                <div id="calc"></div>
+            </div>
+            <!-- <div class="btn-char"> <button onclick="clearText();">Clear Text</button> -->
+            <!-- <span class="char-limit">Remaining <span class="count">0</span> Characters</span></div> -->
+        <script src="script.js"></script>
+        <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    </body>
+</html>
